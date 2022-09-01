@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styling */
+.navbar{
+    border:2px solid red;
+}
+
+.navbar ul{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li{
+    list-style: none;
+}
