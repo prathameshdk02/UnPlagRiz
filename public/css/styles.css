@@ -4,16 +4,98 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size:62.5%;
+}
+
+/* div{
+    border:1px solid red;
+}
+
+nav{
+    border:1px solid blue;
+} */
+
 /* Navigation Bar Styling */
 .navbar{
-    border:2px solid red;
+    display:flex;
+    font-size: 1.6rem;
+    color:white;
+    background-color: #172A3A;
+    height: 5.4rem;
+    justify-content: center;
+    padding: 0rem 3rem;
 }
 
-.navbar ul{
+.navbar .navbar-list{
     display:flex;
     justify-content: flex-end;
+    width:90%;
+    gap:2rem;
+    list-style:none;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar ul li{
-    list-style: none;
+.navbar .navbar-list li a{
+    text-decoration: none;
+    padding:1.4rem;
+    color:white;
+    /* border:2px solid white; */
+    /* border-radius:5px; */
+}
+
+.navbar .navbar-list li a:hover{
+    background-color: rgb(43, 61, 74);
+    border-top:2px solid white;
+}
+
+/* Navigation Logo Styling */
+.navbar .navbar-logo{
+    display:flex;
+    align-items: center;
+    padding:0.4rem;
+}
+
+.navbar .navbara-logo span{
+    display:inline-block;
+}
+
+.navbar .navbar-logo .logo-up{
+    font-size: 2.5rem;
+}
+
+.navbar .navbar-logo span[name="U"]{
+    position: relative;
+    bottom:-0.3rem;
+}
+
+.navbar .navbar-logo span[name="P"]{
+    position: relative;
+    bottom:0.6rem;
+}
+
+.navbar .navbar-logo span[name="R"]{
+    position: relative;
+    bottom:-0.3rem;
+}
+
+.navbar .navbar-logo span[name="UnPlagRiz"]{
+    position:relative;
+    font-size:1.4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:0.2rem;
+    bottom:-0.4rem;
+}
+
+/* Mobile Icon Styling */
+.mobile-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.2rem;
+    height:5rem;
+    width:5rem;
+    color: white;
+    font-size:2.4rem;
 }
