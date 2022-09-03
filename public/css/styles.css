@@ -125,6 +125,7 @@ html{
         display:block;
         position:absolute;
         right:0;
+        z-index:100;
     }
 
     /* Hiding Close button */
@@ -152,6 +153,7 @@ html{
         display:block;
         position:absolute;
         right:0;
+        z-index:100;
     }
 
     /* Styling for mobile-list-logo */
