@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
     <title>UnPlagRiz - A Free Plagiarism Checker</title>
+    {{!-- Link to CSS StyleSheet --}}
+    <link rel="stylesheet" href="../css/styles.css">
+    {{!-- Link to Font Awesome Icons --}}
+    <script src="https://kit.fontawesome.com/1bdbec0da6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li>About Us</li>
-            <li>Login</li>
-            <li>Register</li>
+    <header class="nav-header">
+        {{!-- Logo --}}
+        <div class="logo-container">
+            <span class="logo-upper">U</span>
+            <span class="logo-upper">P</span>
+            <span class="logo-upper">R</span>
+            <span class="logo-lower">UnPlagRiz</span>
+        </div>
+
+        {{!-- Navigation Links --}}
+        <ul class="nav-list">
+            <li><a href="#">Check Plagiarism</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
-    </nav>
+
+        {{!-- Buttons for non-desktop views --}}
+        <div class="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
 </body>
 </html>
