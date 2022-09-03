@@ -2,6 +2,7 @@
 :root{
     --navBarColor:#38023B;
     --navBarHeight:6rem;
+    --bodyBackColor:rgba(233, 233, 233, 0.697);
 }
 
 /* Basic Universal Styling */
@@ -14,7 +15,11 @@
 /* Setting html props to set 1rem = 10px */
 html{
     font-size: 62.5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Popins', sans-serif;
+}
+
+body{
+    background-color: var(--bodyBackColor);
 }
 
 /* Temporary Styling - For Development */
@@ -78,6 +83,42 @@ html{
 /* Hiding Mobile List Logo */
 .list-banner{
     display:none;
+}
+
+/* Styling for Main Section of the Page */
+.main-section{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    padding-top:1rem;
+    /* align-items: center; */
+}
+
+.main-section .main-container{
+    background-color: white;
+    width:70vw;
+    padding:1.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(168, 168, 168);
+    border-radius: 5px;
+}
+
+.main-section .main-heading{
+    text-align: center;
+    font-size: 2.3rem;
+    padding:0.5rem;
+}
+
+.main-section .main-paragraph{
+    text-align: center;
+    font-size: 1.6rem;
+    padding:0.5rem;
+}
+
+#main-text-box{
+    margin:1rem 0rem;
+    width:100%;
+    height:40%;
 }
 
 /* Media Query - For Responsive Non-Desktop views */
@@ -180,6 +221,11 @@ html{
 
     .mobile .nav-list li a:hover{
         border-bottom:1px solid var(--navBarColor);
+    }
+
+    /* Styling for main container */
+    .main-section .main-container{
+        width:95vw;
     }
 }
 
