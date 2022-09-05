@@ -1,4 +1,4 @@
-// Adding click listeners on navigation bar's mobile buttons
+// Code regarding the Menu button - For mobile views...
 const navHeader = document.querySelector('.nav-header');
 const hamBtn = document.querySelector('.mobile-btn[name="ham"]');
 const closeBtn = document.querySelector('.mobile-btn[name="close"]');

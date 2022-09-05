@@ -1,7 +1,11 @@
+/* Import Link for Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Average+Sans&display=swap');
+
 /* CSS root - Holds Global CSS variables */
 :root{
-    --navBarColor:#38023B;
-    --navBarHeight:6rem;
+    --navBarColor:#1E1B18;
+    --navBarHeight: 6rem;
+    --primaryAccent:#3870ba;
     --bodyBackColor:rgba(233, 233, 233, 0.697);
 }
 
@@ -20,6 +24,14 @@ html{
 
 body{
     background-color: var(--bodyBackColor);
+}
+
+html,body{
+    overflow-x:hidden;
+}
+
+body::-webkit-scrollbar{
+    display:none;
 }
 
 /* Temporary Styling - For Development */
@@ -42,11 +54,22 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding:0rem 1rem
+    padding:0rem 1rem;
+    font-family: 'Allura', cursive;
+    user-select: none;
 
     /* Was trying to center the logo... */
     /* text-align: center; */
     /* line-height: var(--navBarHeight); */
+}
+
+.logo-lower{
+    border-left: 8px solid var(--primaryAccent);
+    border-bottom: 2px solid var(--primaryAccent);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 2px;
+    font-size: 3.4rem;
+    padding-left: 1rem;
 }
 
 /* Styling for Navigation's list */
@@ -92,7 +115,6 @@ body{
     display:flex;
     justify-content: center;
     padding-top:1rem;
-    /* align-items: center; */
 }
 
 .main-section .main-container{
@@ -211,6 +233,8 @@ body{
         display:flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Allura', cursive;
+        user-select: none;
     }
 
     /* Styling to mobile list links */
