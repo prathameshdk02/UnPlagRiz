@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const app = express();
+const port = 8000;
 
 // Defining paths for directories
 const publicPath = path.join(__dirname,'../public');
@@ -19,7 +20,7 @@ app.get('/',(req,res)=>{
     res.render('main');
 })
 
-// Starting the Local Server at Port - 8000
-app.listen(8000,()=>{
-    console.log("Listening on port 8000");
+// Starting the Local Server at Port - port
+app.listen(port,()=>{
+    console.log(`Listening on localhost:${port}`);
 });
