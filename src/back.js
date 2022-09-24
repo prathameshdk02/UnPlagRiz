@@ -17,7 +17,7 @@ hbs.registerPartials(partialsPath);
 
 // Handling Routes...
 app.get('/',(req,res)=>{
-    res.render('main');
+    res.render('land');
 })
 
 // Starting the Local Server at Port - port
