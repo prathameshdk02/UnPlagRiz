@@ -1,12 +1,14 @@
 /* Import Link for Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Average+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Noto+Sans:wght@200;400&display=swap');
 
 /* CSS root - Holds Global CSS variables */
 :root{
-    --navBarColor:#1E1B18;
-    --navBarHeight: 6rem;
+    --navBarColor:#ffffff;
+    --navBarHeight: 6.5rem;
+    --navBarMargin: 7rem;
     --primaryAccent:#3870ba;
-    --bodyBackColor:rgba(233, 233, 233, 0.697);
+    --bodyBackColor:#fff;
+    --bodyFontColor: #3c69a2;
 }
 
 /* Basic Universal Styling */
@@ -19,11 +21,12 @@
 /* Setting html props to set 1rem = 10px */
 html{
     font-size: 62.5%;
-    font-family: 'Popins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body{
     background-color: var(--bodyBackColor);
+    color:var(--bodyFontColor)
 }
 
 html,body{
@@ -35,17 +38,16 @@ body::-webkit-scrollbar{
 }
 
 /* Temporary Styling - For Development */
-/* header,div,nav,ul{
+header,div,nav,ul{
     border:1px solid red;
-} */
+}
 
 /* Main Container for Navigation bar */
 .nav-header{
     display:flex;
-    padding: 0rem 2rem;
+    padding: 0rem var(--navBarMargin);
     height: var(--navBarHeight);
     background-color: var(--navBarColor);
-    color:white;
     font-size: 1.5rem;
 }
 
@@ -56,8 +58,8 @@ body::-webkit-scrollbar{
     align-items: center;
     padding:0rem 1rem;
     font-family: 'Allura', cursive;
+    font-weight: 600;
     user-select: none;
-
     /* Was trying to center the logo... */
     /* text-align: center; */
     /* line-height: var(--navBarHeight); */
@@ -84,7 +86,8 @@ body::-webkit-scrollbar{
 .nav-header .nav-list li a{
     text-decoration: none;
     padding:1.8rem 2rem;
-    color:white
+    color:var(--bodyFontColor);
+    font-weight: 600;
 }
 
 /* Styling for Navigation's mobile btns */
@@ -108,39 +111,27 @@ body::-webkit-scrollbar{
     display:none;
 }
 
-/* Styling for Main Section of the Page */
-.main-section{
-    width:100vw;
-    height: 100vh;
+/* Styling for Hero Banner */
+.land-hero-banner{
     display:flex;
-    justify-content: center;
-    padding-top:1rem;
-}
-
-.main-section .main-container{
-    background-color: white;
-    width:70vw;
-    padding:1.5rem;
-    box-shadow: 2px 2px 10px 3px rgb(168, 168, 168);
-    border-radius: 5px;
-}
-
-.main-section .main-heading{
-    text-align: center;
-    font-size: 2.3rem;
-    padding:0.5rem;
-}
-
-.main-section .main-paragraph{
-    text-align: center;
-    font-size: 1.6rem;
-    padding:0.5rem;
-}
-
-#main-text-box{
-    margin:1rem 0rem;
     width:100%;
-    height:40%;
+    height:60vh;
+    padding:10rem var(--navBarMargin);
+    background-color:#f2f2f2;
+    border-bottom-right-radius: 30%;   
+}
+
+.land-hero-banner .hero-banner-info{
+    width:50%;
+    padding:2rem;
+}
+
+.land-hero-banner .hero-banner-info h1{
+    font-size:5rem;
+}
+
+.land-hero-banner .hero-banner-info p{
+    font-size:2.4rem;
 }
 
 /* Media Query - For Responsive Non-Desktop views */
@@ -245,11 +236,6 @@ body::-webkit-scrollbar{
 
     .mobile .nav-list li a:hover{
         border-bottom:1px solid var(--navBarColor);
-    }
-
-    /* Styling for main container */
-    .main-section .main-container{
-        width:95vw;
     }
 }
 
